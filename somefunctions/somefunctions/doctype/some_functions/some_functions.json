@@ -10,7 +10,15 @@
   "account",
   "company",
   "account_type",
-  "log"
+  "log",
+  "creditors_section",
+  "create_suppliers",
+  "dryrun",
+  "suppliers_csv",
+  "supplier_group",
+  "supplier_account",
+  "supplier_account_type",
+  "supplier_log"
  ],
  "fields": [
   {
@@ -43,6 +51,7 @@
    "options": "\nAccumulated Depreciation\nAsset Received But Not Billed\nBank\nCash\nChargeable\nCapital Work in Progress\nCost of Goods Sold\nDepreciation\nEquity\nExpense Account\nExpenses Included In Asset Valuation\nExpenses Included In Valuation\nFixed Asset\nIncome Account\nPayable\nReceivable\nRound Off\nStock\nStock Adjustment\nStock Received But Not Billed\nTax\nTemporary"
   },
   {
+   "collapsible": 1,
    "fieldname": "debitor_accounts_section",
    "fieldtype": "Section Break",
    "label": "Debitor Accounts"
@@ -51,10 +60,56 @@
    "fieldname": "log",
    "fieldtype": "Text Editor",
    "label": "log"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "creditors_section",
+   "fieldtype": "Section Break",
+   "label": "Creditors"
+  },
+  {
+   "fieldname": "create_suppliers",
+   "fieldtype": "Button",
+   "label": "Create Suppliers",
+   "options": "create_suppliers"
+  },
+  {
+   "fieldname": "suppliers_csv",
+   "fieldtype": "Attach",
+   "label": "Suppliers CSV"
+  },
+  {
+   "fieldname": "supplier_account",
+   "fieldtype": "Link",
+   "label": "Parent Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "supplier_account_type",
+   "fieldtype": "Select",
+   "label": "Account Type",
+   "options": "\nAccumulated Depreciation\nAsset Received But Not Billed\nBank\nCash\nChargeable\nCapital Work in Progress\nCost of Goods Sold\nDepreciation\nEquity\nExpense Account\nExpenses Included In Asset Valuation\nExpenses Included In Valuation\nFixed Asset\nIncome Account\nPayable\nReceivable\nRound Off\nStock\nStock Adjustment\nStock Received But Not Billed\nTax\nTemporary"
+  },
+  {
+   "fieldname": "supplier_log",
+   "fieldtype": "Text Editor",
+   "label": "Supplier Log"
+  },
+  {
+   "fieldname": "dryrun",
+   "fieldtype": "Button",
+   "label": "Create Suppliers Dryrun",
+   "options": "dryrun"
+  },
+  {
+   "fieldname": "supplier_group",
+   "fieldtype": "Link",
+   "label": "Supplier Group",
+   "options": "Supplier Group"
   }
  ],
  "issingle": 1,
- "modified": "2020-01-06 12:42:51.856807",
+ "modified": "2020-01-31 01:34:32.822406",
  "modified_by": "Administrator",
  "module": "Somefunctions",
  "name": "Some Functions",
